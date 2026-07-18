@@ -1,0 +1,649 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: #172554;
+
+    background: #ffffff;
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+.logo {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #1e3a8a;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #374151;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #1e3a8a;
+
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background: #eef4ff;
+
+}
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+
+.small-title {
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(60px, 10vw, 120px);
+
+    line-height: 0.95;
+
+    margin: 20px 0;
+
+    color: #172554;
+
+}
+
+
+.hero-text {
+
+    max-width: 550px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #4b5563;
+
+}
+
+
+.main-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 16px 28px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.main-button:hover {
+
+    background: #172554;
+
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+
+    padding: 100px 8%;
+
+}
+
+
+.light-section {
+
+    background: #f8fafc;
+
+}
+
+
+.section-content,
+
+.form-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+.section-label {
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section h2 {
+
+    font-size: 48px;
+
+    max-width: 700px;
+
+    margin: 20px 0;
+
+}
+
+
+.section p {
+
+    max-width: 700px;
+
+    line-height: 1.8;
+
+    color: #4b5563;
+
+    font-size: 18px;
+
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.step {
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+}
+
+
+.step-number {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+}
+
+
+.step h3 {
+
+    font-size: 24px;
+
+}
+
+
+/* =========================
+   AFTER YOU SPEAK UP
+========================= */
+
+.process-section {
+
+    background: #eef4ff;
+
+}
+
+
+.process-list {
+
+    margin-top: 45px;
+
+}
+
+
+.process-item {
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #cbd5e1;
+
+}
+
+
+.process-item span {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+}
+
+
+.process-item h3 {
+
+    margin: 0 0 8px 0;
+
+    font-size: 22px;
+
+}
+
+
+.process-item p {
+
+    margin: 0;
+
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+
+    max-width: 650px;
+
+}
+
+
+.form-intro {
+
+    margin-bottom: 30px;
+
+}
+
+
+form {
+
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+
+select,
+
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+textarea {
+
+    height: 160px;
+
+    resize: vertical;
+
+}
+
+
+input:focus,
+
+select:focus,
+
+textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+
+.anonymous-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: normal;
+
+}
+
+
+.anonymous-option input {
+
+    width: auto;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #172554;
+
+}
+
+
+/* =========================
+   ADMIN REPORT CARDS
+========================= */
+
+#reportsContainer {
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+}
+
+
+.report-card {
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    background: white;
+
+    border-left: 5px solid #1e3a8a;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.report-card h2 {
+
+    color: #1e3a8a;
+
+}
+
+
+.report-card p {
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+
+}
+
+
+footer p {
+
+    color: #cbd5e1;
+
+}
+
+
+/* =========================
+   MOBILE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+
+    .navbar {
+
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .nav-links {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .hero {
+
+        min-height: 550px;
+
+        padding: 60px 7%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+
+    }
+
+
+    .hero-text {
+
+        font-size: 17px;
+
+    }
+
+
+    .section {
+
+        padding: 70px 7%;
+
+    }
+
+
+    .section h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .process-item {
+
+        gap: 20px;
+
+    }
+
+
+    form {
+
+        padding: 25px 20px;
+
+    }
+
+}
