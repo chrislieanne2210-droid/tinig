@@ -115,6 +115,11 @@ function loadReports() {
                 </h2>
 
                 <p>
+                    <strong>Name:</strong>
+                    ${report.name}
+                </p>
+
+                <p>
                     <strong>Category:</strong>
                     ${report.category}
                 </p>
@@ -127,11 +132,6 @@ function loadReports() {
                 <p>
                     <strong>Story:</strong>
                     ${report.story}
-                </p>
-
-                <p>
-                    <strong>Anonymous:</strong>
-                    ${report.anonymous ? "Yes" : "No"}
                 </p>
 
                 <p>
