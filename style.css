@@ -537,6 +537,44 @@ button:hover {
 
 
 /* =========================
+   REVIEWED REPORTS
+========================= */
+
+.report-card.reviewed {
+
+    border-left: 6px solid #dc2626;
+
+    background-color: #ffe5e5;
+
+}
+
+
+.report-card.reviewed h2 {
+
+    color: #991b1b;
+
+}
+
+
+.report-card.reviewed .reviewButton {
+
+    background-color: #dc2626;
+
+    color: white;
+
+    cursor: not-allowed;
+
+}
+
+
+.report-card.reviewed .reviewButton:hover {
+
+    background-color: #b91c1c;
+
+}
+
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -643,6 +681,20 @@ footer p {
     form {
 
         padding: 25px 20px;
+
+    }
+
+
+    #reportsContainer {
+
+        margin: 25px 5%;
+
+    }
+
+
+    .report-card {
+
+        padding: 20px;
 
     }
 
