@@ -116,7 +116,7 @@ function loadReports() {
 
                 <p>
                     <strong>Name:</strong>
-                    ${report.name}
+                    ${report.name || "Anonymous"}
                 </p>
 
                 <p>
@@ -163,6 +163,10 @@ function loadReports() {
                     "Already Reviewed";
 
                 reviewButton.disabled = true;
+
+                reportCard.classList.add(
+                    "reviewed"
+                );
 
             }
 
